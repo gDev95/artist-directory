@@ -1,0 +1,12 @@
+<p>Artist: {{ model.name }}</p>
+<div class='form-container'>
+<form #artistForm="ngForm">
+<input #newArtist
+    type='text' 
+    placeholder="Enter Artist"  
+    [(ngModel)]="model.name" 
+    name="name" 
+    class="artist-field" 
+    (keyup.enter)=OnAddArtist() />
+<input type='submit' value="Add" class='add-btn' (click)= "onAddArtist()"></form>
+</div>

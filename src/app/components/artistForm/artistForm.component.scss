@@ -1,0 +1,42 @@
+// variables
+
+$font-face: 'Roboto Condensed', sans-serif;
+$btn-color: #DDD;
+$btn-font: 'Playfair Display', serif;
+// classes
+.form-container {
+    display: flex;
+    align-items: center;
+    
+}
+.add-btn {
+    
+    width:10%;
+    border:1px solid #000;
+    background-color:transparent;
+    font-family: $font-face;
+    &:hover{
+        border: 1px solid #999;
+        color: #333;
+    }
+
+}
+
+form{
+    width:100%;
+}
+// html elements
+input {
+    font-family: $font-face;
+    border: 1px solid #000;
+    background-color: transparent;
+    height: 2em;
+    width:50%;
+    font-size: 20px;
+    padding:.5em !important;
+    background-color:transparent;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-left:5px;
+}
